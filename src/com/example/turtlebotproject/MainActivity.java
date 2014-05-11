@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 // 
 //			public void onClick(View arg0) {
 // 
-//			    Intent intent = new Intent(context, MainActivity3.class);
+//			    Intent intent = new Intent(context, MainActivity2.class);
 //                            startActivity(intent);   
 // 
 //			}
