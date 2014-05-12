@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class accActivity extends MainActivity {
+public class scriptsActivity extends MainActivity {
 	
 	// create buttons
 	Button joyButton;
@@ -17,22 +17,22 @@ public class accActivity extends MainActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.acc);
+		setContentView(R.layout.scripts);
 		
 		// setup button listeners
-		addListenerOnButton();
-		addListenerOnButton2();
-		addListenerOnButton3();
+		addListenerOnButton12();
+		addListenerOnButton13();
+		addListenerOnButton14();
 	}
 	
-	
+
 	// button for going to Joystick page
-	public void addListenerOnButton() {
+	public void addListenerOnButton12() {
 	   	 
 		final Context context = this;
  
 		// assign buttons to xml button ids
-		joyButton = (Button) findViewById(R.id.button1);
+		joyButton = (Button) findViewById(R.id.button12);
 
 		// joystick activity
 		joyButton.setOnClickListener(new OnClickListener() {
@@ -46,12 +46,12 @@ public class accActivity extends MainActivity {
 	}
 
 	// button for going to Scripts page
-	public void addListenerOnButton2() {
+	public void addListenerOnButton13() {
 	   	 
 		final Context context = this;
  
 		// assign buttons to xml button ids
-		scriptButton = (Button) findViewById(R.id.button2);
+		scriptButton = (Button) findViewById(R.id.button13);
  
 		//scripts activity
 		scriptButton.setOnClickListener(new OnClickListener() {
@@ -66,12 +66,12 @@ public class accActivity extends MainActivity {
 	}
 
 	// button for going to Accelerometer page
-	public void addListenerOnButton3() {
+	public void addListenerOnButton14() {
 	   	 
 		final Context context = this;
 		
 		// assign buttons to xml button ids
-		accButton = (Button) findViewById(R.id.button3);
+		accButton = (Button) findViewById(R.id.button14);
  
 		// acc activity
 		accButton.setOnClickListener(new OnClickListener() {

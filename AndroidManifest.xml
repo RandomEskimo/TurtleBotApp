@@ -24,8 +24,16 @@
             android:name=".MainActivity2" >
         </activity>
         <activity
-            android:label="@string/app_name"
+            android:label="@string/joystickName"
             android:name=".joystickActivity" >
+        </activity>
+        <activity
+            android:label="@string/scriptName"
+            android:name=".scriptsActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".accActivity" >
         </activity>
     </application>
  

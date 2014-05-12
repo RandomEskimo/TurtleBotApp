@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity2 extends MainActivity	{
 	
-	Button button;
+	Button connectButton;
 	 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -22,20 +22,17 @@ public class MainActivity2 extends MainActivity	{
    	 
 		final Context context = this;
  
-		Button button = (Button) findViewById(R.id.button1);
+		connectButton = (Button) findViewById(R.id.button1);
  
-		button.setOnClickListener(new OnClickListener() {
+		connectButton.setOnClickListener(new OnClickListener() {
  
 			public void onClick(View arg0) {
  
 			    Intent intent = new Intent(context, joystickActivity.class);
                             startActivity(intent);   
- 
 			}
- 
 		});
 	
 }
- 
 }
 

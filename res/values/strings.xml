@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">Turtlebot Project</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="joystickName">Joystick</string>
+    <string name="scriptName">Scripts</string>
+    <string name="accName">Accelerometer</string>
 
 </resources>
