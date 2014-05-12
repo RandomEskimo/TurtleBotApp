@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class joystickActivity extends MainActivity {
 	
-	// create buttons
+	// create page buttons
 	Button joyButton;
 	Button scriptButton;
 	Button accButton;
@@ -19,12 +19,13 @@ public class joystickActivity extends MainActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.joystick);
 		
-		// setup button listeners
+		// setup page button listeners
 		addListenerOnButton();
 		addListenerOnButton2();
 		addListenerOnButton3();
 	}
-	
+
+// BUTTONS FOR LINKING TO SCREENS
 	// button for going to Joystick page
 	public void addListenerOnButton() {
 	   	 
@@ -43,7 +44,6 @@ public class joystickActivity extends MainActivity {
 			}
 		});
 	}
-
 	// button for going to Scripts page
 	public void addListenerOnButton2() {
 	   	 
@@ -63,7 +63,6 @@ public class joystickActivity extends MainActivity {
 			}
 		});
 	}
-
 	// button for going to Accelerometer page
 	public void addListenerOnButton3() {
 	   	 

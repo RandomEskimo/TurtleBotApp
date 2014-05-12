@@ -9,23 +9,31 @@ import android.widget.Button;
 
 public class accActivity extends MainActivity {
 	
-	// create buttons
+	// create page buttons
 	Button joyButton;
 	Button scriptButton;
 	Button accButton;
+	
+	// create accelerometer buttons
+	Button accEnable;
+	Button accDisable;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.acc);
 		
-		// setup button listeners
+		// setup page button listeners
 		addListenerOnButton();
 		addListenerOnButton2();
 		addListenerOnButton3();
+		
+		//setup accelerometer buttons
+		addListenerOnEnableButton();
+		addListenerOnDisableButton();
 	}
 	
-	
+// BUTTONS FOR LINKING TO SCREENS
 	// button for going to Joystick page
 	public void addListenerOnButton() {
 	   	 
@@ -44,7 +52,6 @@ public class accActivity extends MainActivity {
 			}
 		});
 	}
-
 	// button for going to Scripts page
 	public void addListenerOnButton2() {
 	   	 
@@ -64,7 +71,6 @@ public class accActivity extends MainActivity {
 			}
 		});
 	}
-
 	// button for going to Accelerometer page
 	public void addListenerOnButton3() {
 	   	 
@@ -84,4 +90,45 @@ public class accActivity extends MainActivity {
 			}
 		});
 	}
+	
+// BUTTONS FOR ENABLING/DISABLING ACCELEROMETER
+	// acc enable button listener
+	public void addListenerOnEnableButton() {
+	   	 
+		final Context context = this;
+ 
+		// assign buttons to xml button ids
+		accEnable = (Button) findViewById(R.id.button4);
+
+		// assign accEnable listener
+		accEnable.setOnClickListener(new OnClickListener() {
+ 
+			public void onClick(View arg0) {
+ 
+				// not implemented yet, goes to joystick screen
+			    Intent intent = new Intent(context, joystickActivity.class);
+                            startActivity(intent);   
+			}
+		});
+	}
+	// acc disable button listener
+	public void addListenerOnDisableButton() {
+	   	 
+		final Context context = this;
+ 
+		// assign buttons to xml button ids
+		accDisable = (Button) findViewById(R.id.button5);
+
+		// assign accDisable listener
+		accDisable.setOnClickListener(new OnClickListener() {
+ 
+			public void onClick(View arg0) {
+				
+				// not implemented yet, goes to joystick screen
+			    Intent intent = new Intent(context, joystickActivity.class);
+                            startActivity(intent);   
+			}
+		});
+	}
+	
 }

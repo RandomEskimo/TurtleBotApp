@@ -32,10 +32,20 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_marginBottom="102dp"
+        android:layout_above="@+id/button5"
+        android:layout_alignRight="@+id/button5"
+        android:layout_marginBottom="55dp"
         android:layout_toRightOf="@+id/button1"
         android:text="Enable" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Disable" />
 
 </RelativeLayout>
