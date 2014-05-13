@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity {
-
+	
+	Button scanButton;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	
@@ -19,45 +21,24 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addListenerOnButton();
-//        addListenerOnButton2();
     }
     
     public void addListenerOnButton() {
     	 
 		final Context context = this;
  
-		Button button = (Button) findViewById(R.id.button1);
+		scanButton = (Button) findViewById(R.id.button1);
  
-		button.setOnClickListener(new OnClickListener() {
+		scanButton.setOnClickListener(new OnClickListener() {
  
 			public void onClick(View arg0) {
  
 			    Intent intent = new Intent(context, MainActivity2.class);
                             startActivity(intent);   
- 
 			}
- 
 		});
     }
     
-//    public void addListenerOnButton2() {
-//      	 
-//		final Context context = this;
-// 
-//		Button button = (Button) findViewById(R.id.button2);
-// 
-//		button.setOnClickListener(new OnClickListener() {
-// 
-//			public void onClick(View arg0) {
-// 
-//			    Intent intent = new Intent(context, MainActivity3.class);
-//                            startActivity(intent);   
-// 
-//			}
-// 
-//		});
-//    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
