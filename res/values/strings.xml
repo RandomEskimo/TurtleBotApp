@@ -7,6 +7,16 @@
     <string name="scriptName">Scripts</string>
     <string name="accName">Accelerometer</string>
     <string name="title_activity_btdevices_view">BTDevicesView</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="banjoName">Banjo</string>
+    <string name="cover_dockName">Cover + Dock</string>
+    <string name="coverName">Cover</string>
+    <string name="figure8Name">Figure 8</string>
+    <string name="homeName">Home</string>
+    <string name="mouseName">Mouse</string>
+    <string name="pachelbelName">Pachelbel</string>
+    <string name="spot_coverName">Spot + Cover</string>
+    <string name="tagName">Tag</string>
+    <string name="wimpName">Wimp</string>
+    
 
 </resources>

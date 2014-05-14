@@ -49,6 +49,8 @@ public class MainActivity extends Activity {
 				if(bt_adapter == null)
 				{
 					//add an error message here because this means the device does not support bluetooth
+					Intent intent = new Intent(context, MainActivity2.class);
+			        startActivity(intent);
 					return;
 				}
 				//make sure bt is enabled
