@@ -6,5 +6,7 @@
     <string name="joystickName">Joystick</string>
     <string name="scriptName">Scripts</string>
     <string name="accName">Accelerometer</string>
+    <string name="title_activity_btdevices_view">BTDevicesView</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
