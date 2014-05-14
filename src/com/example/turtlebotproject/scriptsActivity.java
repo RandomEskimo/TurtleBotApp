@@ -124,7 +124,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 				
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, coverActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -143,7 +143,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, cover_dockActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -162,7 +162,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, spot_coverActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -181,7 +181,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, mouseActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -200,7 +200,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, figure8Activity.class);
 				startActivity(intent);   
 		
 			}
@@ -219,7 +219,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, wimpActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -238,7 +238,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, homeActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -257,7 +257,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, tagActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -276,7 +276,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, pachelbelActivity.class);
 				startActivity(intent);   
 		
 			}
@@ -295,7 +295,7 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
+				Intent intent = new Intent(context, banjoActivity.class);
 				startActivity(intent);   
 		
 			}

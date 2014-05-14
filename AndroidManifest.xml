@@ -40,6 +40,46 @@
             android:name="com.example.turtlebotproject.BTDevicesView"
             android:label="@string/title_activity_btdevices_view" >
         </activity>
+		<activity
+            android:label="@string/accName"
+            android:name=".banjoActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".cover_dockActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".coverActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".figure8Activity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".mouseActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".pachelbelActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".spot_coverActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".tagActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".wimpActivity" >
+        </activity>
+        <activity
+            android:label="@string/accName"
+            android:name=".homeActivity" >
+        </activity>
     </application>
 
 </manifest>
