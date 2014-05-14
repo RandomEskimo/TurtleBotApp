@@ -38,8 +38,18 @@ public final class R {
         public static final int activity_btdevices_view=0x7f030001;
         public static final int activity_main=0x7f030002;
         public static final int activity_main2=0x7f030003;
-        public static final int joystick=0x7f030004;
-        public static final int scripts=0x7f030005;
+        public static final int banjo=0x7f030004;
+        public static final int cover=0x7f030005;
+        public static final int cover_dock=0x7f030006;
+        public static final int figure8=0x7f030007;
+        public static final int home=0x7f030008;
+        public static final int joystick=0x7f030009;
+        public static final int mouse=0x7f03000a;
+        public static final int pachelbel=0x7f03000b;
+        public static final int scripts=0x7f03000c;
+        public static final int spot_cover=0x7f03000d;
+        public static final int tag=0x7f03000e;
+        public static final int wimp=0x7f03000f;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;
@@ -47,11 +57,20 @@ public final class R {
     public static final class string {
         public static final int accName=0x7f040004;
         public static final int app_name=0x7f040000;
-        public static final int hello_world=0x7f040006;
+        public static final int banjoName=0x7f040006;
+        public static final int coverName=0x7f040008;
+        public static final int cover_dockName=0x7f040007;
+        public static final int figure8Name=0x7f040009;
+        public static final int homeName=0x7f04000a;
         public static final int joystickName=0x7f040002;
         public static final int menu_settings=0x7f040001;
+        public static final int mouseName=0x7f04000b;
+        public static final int pachelbelName=0x7f04000c;
         public static final int scriptName=0x7f040003;
+        public static final int spot_coverName=0x7f04000d;
+        public static final int tagName=0x7f04000e;
         public static final int title_activity_btdevices_view=0x7f040005;
+        public static final int wimpName=0x7f04000f;
     }
     public static final class style {
         /** 

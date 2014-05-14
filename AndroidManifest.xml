@@ -41,43 +41,43 @@
             android:label="@string/title_activity_btdevices_view" >
         </activity>
 		<activity
-            android:label="@string/accName"
+            android:label="@string/banjoName"
             android:name=".banjoActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/cover_dockName"
             android:name=".cover_dockActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/coverName"
             android:name=".coverActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/figure8Name"
             android:name=".figure8Activity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/mouseName"
             android:name=".mouseActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/pachelbelName"
             android:name=".pachelbelActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/spot_coverName"
             android:name=".spot_coverActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/tagName"
             android:name=".tagActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/wimpName"
             android:name=".wimpActivity" >
         </activity>
         <activity
-            android:label="@string/accName"
+            android:label="@string/homeName"
             android:name=".homeActivity" >
         </activity>
     </application>
