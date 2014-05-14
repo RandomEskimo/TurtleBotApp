@@ -43,9 +43,6 @@ public class MainActivity extends Activity {
 		scanButton.setOnClickListener(new OnClickListener() {
  
 			public void onClick(View arg0) {
- 
-			    //Intent intent = new Intent(context, MainActivity2.class);
-                //            startActivity(intent);
 				
 				//get the bluetooth adapter
 				BluetoothAdapter bt_adapter = BluetoothAdapter.getDefaultAdapter();
@@ -92,13 +89,11 @@ public class MainActivity extends Activity {
     //this method is here to reconnect the two separate paths execution can take
     private void handleBTConnection()
     {
-    	BluetoothAdapter bt_adapter = BluetoothAdapter.getDefaultAdapter();
     	
     //show the user a list of the already paired devices
-    		Intent bt_intent = new Intent(this, BTDevicesView.class);
-    		startActivityForResult(bt_intent, SELECT_DEVICE);
-    		//from here it's back to onActivityResult() then to part 2
-    		//handleBTConnection2(null);
+    	Intent bt_intent = new Intent(this, BTDevicesView.class);
+    	startActivityForResult(bt_intent, SELECT_DEVICE);
+    	//from here it's back to onActivityResult() then to part 2
     }
 
     private void handleBTConnection2(String device)

@@ -51,8 +51,6 @@ public class BTDevicesView extends ListActivity {
     		for(BluetoothDevice device : paired_devices)
     			known_devices.add(device.getName() + "\n" + device.getAddress());
     		devices_list.setAdapter(known_devices);
-    		
-    		//startActivityForResult(bt_intent, SELECT_DEVICE);
     	}
 	}
 	
@@ -60,8 +58,6 @@ public class BTDevicesView extends ListActivity {
 	{
 		public void onItemClick(AdapterView parent, View v, int position, long id)
 		{
-			@SuppressWarnings("unchecked")
-			//ArrayAdapter<String> devices = (ArrayAdapter<String>) getListAdapter();
 			String device = known_devices.getItem(position);
 			if(device == null)
 			{
