@@ -45,43 +45,43 @@
         </activity>
 		<activity
             android:label="@string/banjoName"
-            android:name=".banjoActivity" >
+            android:name="com.example.turtlebotproject.banjoActivity" >
         </activity>
         <activity
             android:label="@string/cover_dockName"
-            android:name=".cover_dockActivity" >
+            android:name="com.example.turtlebotproject.cover_dockActivity" >
         </activity>
         <activity
             android:label="@string/coverName"
-            android:name=".coverActivity" >
+            android:name="com.example.turtlebotproject.coverActivity" >
         </activity>
         <activity
             android:label="@string/figure8Name"
-            android:name=".figure8Activity" >
+            android:name="com.example.turtlebotproject.figure8Activity" >
         </activity>
         <activity
             android:label="@string/mouseName"
-            android:name=".mouseActivity" >
+            android:name="com.example.turtlebotproject.mouseActivity" >
         </activity>
         <activity
             android:label="@string/pachelbelName"
-            android:name=".pachelbelActivity" >
+            android:name="com.example.turtlebotproject.pachelbelActivity" >
         </activity>
         <activity
             android:label="@string/spot_coverName"
-            android:name=".spot_coverActivity" >
+            android:name="com.example.turtlebotproject.spot_coverActivity" >
         </activity>
         <activity
             android:label="@string/tagName"
-            android:name=".tagActivity" >
+            android:name="com.example.turtlebotproject.tagActivity" >
         </activity>
         <activity
             android:label="@string/wimpName"
-            android:name=".wimpActivity" >
+            android:name="com.example.turtlebotproject.wimpActivity" >
         </activity>
         <activity
             android:label="@string/homeName"
-            android:name=".homeActivity" >
+            android:name="com.example.turtlebotproject.homeActivity" >
         </activity>
     </application>
 

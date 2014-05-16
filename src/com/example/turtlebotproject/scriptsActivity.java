@@ -27,7 +27,6 @@ public class scriptsActivity extends MainActivity {
 	Button script10;
 	Button stopScript;
 	
-	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -314,8 +313,8 @@ public class scriptsActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				// not implemented yet
-				Intent intent = new Intent(context, accActivity.class);
-				startActivity(intent);   
+//				Intent intent = new Intent(context, accActivity.class);
+//				startActivity(intent);   
 		
 			}
 		});
