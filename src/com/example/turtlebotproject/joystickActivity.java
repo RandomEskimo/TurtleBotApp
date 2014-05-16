@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
+import com.example.turtlebotproject.JoystickMovedListener;
+import com.example.turtlebotproject.JoystickView;
 
 public class joystickActivity extends MainActivity {
 	
@@ -13,6 +16,13 @@ public class joystickActivity extends MainActivity {
 	Button joyButton;
 	Button scriptButton;
 	Button accButton;
+	
+	// create radio buttons
+	// not implemented yet
+	
+	//joystick variables
+	TextView txtX, txtY;
+	JoystickView joystick;
 	 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +33,18 @@ public class joystickActivity extends MainActivity {
 		addListenerOnButton();
 		addListenerOnButton2();
 		addListenerOnButton3();
+		
+		// create radio button listeners
+		// not implemented yet
+		
+		// joystick variables
+		// variables show x and y joystick movement
+		txtX = (TextView)findViewById(R.id.textView2);
+		txtY = (TextView)findViewById(R.id.textView3);
+		// joystick view
+		joystick = (JoystickView)findViewById(R.id.joystickView);
+		// joystick listener
+		joystick.setOnJostickMovedListener(_listener);
 	}
 
 // BUTTONS FOR LINKING TO SCREENS
@@ -82,4 +104,20 @@ public class joystickActivity extends MainActivity {
 			}
 		});
 	}
+	
+	//joystick method creates the listener, and sets the value of the orientation to the screen
+    private JoystickMovedListener _listener = new JoystickMovedListener() {
+
+    @Override
+    public void OnMoved(int pan, int tilt) {
+    	txtX.setText(Integer.toString(pan));
+    	txtY.setText(Integer.toString(tilt));
+    }
+
+    @Override
+    public void OnReleased() {
+		txtX.setText("Stopped");
+		txtY.setText("Stopped");
+	}
+    }; 
 }
