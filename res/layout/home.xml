@@ -21,7 +21,7 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:text="Start Script" />
+        android:text="@string/startScript" />
 
     <Button
         android:id="@+id/button2"
@@ -30,6 +30,6 @@
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Stop Script" />
+        android:text="@string/stopScript" />
 
 </RelativeLayout>

@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="Accel-mtr" />
+        android:text="@string/accPage" />
 
     <Button
         android:id="@+id/button12"
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Joystick" />
+        android:text="@string/joystickPage" />
 
     <Button
         android:id="@+id/button4"
@@ -81,7 +81,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="26dp"
-        android:text="Stop Script" />
+        android:text="@string/stopScript" />
 
     <Button
         android:id="@+id/button13"
@@ -90,7 +90,7 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/button14"
         android:layout_toRightOf="@+id/button12"
-        android:text="Scripts" />
+        android:text="@string/scriptPage" />
 
     <Button
         android:id="@+id/button9"

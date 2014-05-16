@@ -106,8 +106,8 @@ public class accActivity extends MainActivity {
 			public void onClick(View arg0) {
  
 				// not implemented yet, goes to joystick screen
-			    Intent intent = new Intent(context, joystickActivity.class);
-                            startActivity(intent);   
+//			    Intent intent = new Intent(context, joystickActivity.class);
+//                            startActivity(intent);   
 			}
 		});
 	}
@@ -125,8 +125,8 @@ public class accActivity extends MainActivity {
 			public void onClick(View arg0) {
 				
 				// not implemented yet, goes to joystick screen
-			    Intent intent = new Intent(context, joystickActivity.class);
-                            startActivity(intent);   
+//			    Intent intent = new Intent(context, joystickActivity.class);
+//                            startActivity(intent);   
 			}
 		});
 	}

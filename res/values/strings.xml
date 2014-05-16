@@ -6,7 +6,10 @@
     <string name="joystickName">Joystick</string>
     <string name="scriptName">Scripts</string>
     <string name="accName">Accelerometer</string>
-    <string name="title_activity_btdevices_view">BTDevicesView</string>
+    <string name="accPage">Accel-mtr</string>
+    <string name="joystickPage">Joystick</string>
+    <string name="scriptPage">Scripts</string>
+    <string name="title_activity_btdevices_view">Bluetooth Devices</string>
     <string name="banjoName">Banjo</string>
     <string name="cover_dockName">Cover + Dock</string>
     <string name="coverName">Cover</string>
@@ -17,6 +20,9 @@
     <string name="spot_coverName">Spot + Cover</string>
     <string name="tagName">Tag</string>
     <string name="wimpName">Wimp</string>
+    <string name="startScript">Start Script</string>
+    <string name="stopScript">Stop Script</string>
+
     
 
 </resources>

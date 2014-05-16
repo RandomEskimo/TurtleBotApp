@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="42dp"
         android:gravity="center"
-    	android:text="Identical to the Cover script, with one exception. If the robot sees an infrared signal from an iRobot Home Base, it uses that signal to dock with the Home Base and recharge itself"
+    	android:text="Identical to the Cover script, with one exception. If the robot sees an infrared signal from an iRobot Home Base, it uses that signal to dock with the Home Base and recharge itself."
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -21,7 +21,7 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:text="Start Script" />
+        android:text="@string/startScript" />
 
     <Button
         android:id="@+id/button2"
@@ -30,6 +30,6 @@
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Stop Script" />
+        android:text="@string/stopScript" />
 
 </RelativeLayout>

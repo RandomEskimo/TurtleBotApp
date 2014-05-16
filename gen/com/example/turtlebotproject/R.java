@@ -14,23 +14,26 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int TextView01=0x7f070009;
+        public static final int TextView02=0x7f070008;
+        public static final int TextView03=0x7f07000a;
         public static final int btlistview=0x7f070005;
         public static final int button1=0x7f070001;
-        public static final int button10=0x7f07000d;
-        public static final int button11=0x7f07000e;
-        public static final int button12=0x7f070009;
-        public static final int button13=0x7f07000f;
-        public static final int button14=0x7f070008;
+        public static final int button10=0x7f070010;
+        public static final int button11=0x7f070011;
+        public static final int button12=0x7f07000c;
+        public static final int button13=0x7f070012;
+        public static final int button14=0x7f07000b;
         public static final int button2=0x7f070002;
         public static final int button3=0x7f070000;
         public static final int button4=0x7f070003;
         public static final int button5=0x7f070004;
-        public static final int button6=0x7f07000a;
-        public static final int button7=0x7f07000c;
-        public static final int button8=0x7f07000b;
-        public static final int button9=0x7f070010;
+        public static final int button6=0x7f07000d;
+        public static final int button7=0x7f07000f;
+        public static final int button8=0x7f07000e;
+        public static final int button9=0x7f070013;
         public static final int cancel_button=0x7f070006;
-        public static final int menu_settings=0x7f070011;
+        public static final int menu_settings=0x7f070014;
         public static final int textView1=0x7f070007;
     }
     public static final class layout {
@@ -56,21 +59,26 @@ public final class R {
     }
     public static final class string {
         public static final int accName=0x7f040004;
+        public static final int accPage=0x7f040005;
         public static final int app_name=0x7f040000;
-        public static final int banjoName=0x7f040006;
-        public static final int coverName=0x7f040008;
-        public static final int cover_dockName=0x7f040007;
-        public static final int figure8Name=0x7f040009;
-        public static final int homeName=0x7f04000a;
+        public static final int banjoName=0x7f040009;
+        public static final int coverName=0x7f04000b;
+        public static final int cover_dockName=0x7f04000a;
+        public static final int figure8Name=0x7f04000c;
+        public static final int homeName=0x7f04000d;
         public static final int joystickName=0x7f040002;
+        public static final int joystickPage=0x7f040006;
         public static final int menu_settings=0x7f040001;
-        public static final int mouseName=0x7f04000b;
-        public static final int pachelbelName=0x7f04000c;
+        public static final int mouseName=0x7f04000e;
+        public static final int pachelbelName=0x7f04000f;
         public static final int scriptName=0x7f040003;
-        public static final int spot_coverName=0x7f04000d;
-        public static final int tagName=0x7f04000e;
-        public static final int title_activity_btdevices_view=0x7f040005;
-        public static final int wimpName=0x7f04000f;
+        public static final int scriptPage=0x7f040007;
+        public static final int spot_coverName=0x7f040010;
+        public static final int startScript=0x7f040013;
+        public static final int stopScript=0x7f040014;
+        public static final int tagName=0x7f040011;
+        public static final int title_activity_btdevices_view=0x7f040008;
+        public static final int wimpName=0x7f040012;
     }
     public static final class style {
         /** 
