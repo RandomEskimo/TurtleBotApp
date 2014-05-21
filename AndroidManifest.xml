@@ -6,12 +6,13 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    
+
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="16" />
 
     <application
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
@@ -43,45 +44,49 @@
             android:name="com.example.turtlebotproject.BTDevicesView"
             android:label="@string/title_activity_btdevices_view" >
         </activity>
-		<activity
-            android:label="@string/banjoName"
-            android:name="com.example.turtlebotproject.banjoActivity" >
+        <activity
+            android:name="com.example.turtlebotproject.banjoActivity"
+            android:label="@string/banjoName" >
         </activity>
         <activity
-            android:label="@string/cover_dockName"
-            android:name="com.example.turtlebotproject.cover_dockActivity" >
+            android:name="com.example.turtlebotproject.cover_dockActivity"
+            android:label="@string/cover_dockName" >
         </activity>
         <activity
-            android:label="@string/coverName"
-            android:name="com.example.turtlebotproject.coverActivity" >
+            android:name="com.example.turtlebotproject.coverActivity"
+            android:label="@string/coverName" >
         </activity>
         <activity
-            android:label="@string/figure8Name"
-            android:name="com.example.turtlebotproject.figure8Activity" >
+            android:name="com.example.turtlebotproject.figure8Activity"
+            android:label="@string/figure8Name" >
         </activity>
         <activity
-            android:label="@string/mouseName"
-            android:name="com.example.turtlebotproject.mouseActivity" >
+            android:name="com.example.turtlebotproject.mouseActivity"
+            android:label="@string/mouseName" >
         </activity>
         <activity
-            android:label="@string/pachelbelName"
-            android:name="com.example.turtlebotproject.pachelbelActivity" >
+            android:name="com.example.turtlebotproject.pachelbelActivity"
+            android:label="@string/pachelbelName" >
         </activity>
         <activity
-            android:label="@string/spot_coverName"
-            android:name="com.example.turtlebotproject.spot_coverActivity" >
+            android:name="com.example.turtlebotproject.spot_coverActivity"
+            android:label="@string/spot_coverName" >
         </activity>
         <activity
-            android:label="@string/tagName"
-            android:name="com.example.turtlebotproject.tagActivity" >
+            android:name="com.example.turtlebotproject.tagActivity"
+            android:label="@string/tagName" >
         </activity>
         <activity
-            android:label="@string/wimpName"
-            android:name="com.example.turtlebotproject.wimpActivity" >
+            android:name="com.example.turtlebotproject.wimpActivity"
+            android:label="@string/wimpName" >
         </activity>
         <activity
-            android:label="@string/homeName"
-            android:name="com.example.turtlebotproject.homeActivity" >
+            android:name="com.example.turtlebotproject.homeActivity"
+            android:label="@string/homeName" >
+        </activity>
+        <activity
+            android:name="com.example.turtlebotproject.BTDevicesScanActivity"
+            android:label="@string/title_activity_btdevices_scan" >
         </activity>
     </application>
 

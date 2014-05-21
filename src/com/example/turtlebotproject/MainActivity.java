@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
 	
 	private static final int REQUEST_ENABLE_BT = 1;
 	private static final int SELECT_DEVICE     = 2;
+	private static final int SCAN_FOR_DEVICE   = 3;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +75,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
+    	if(data == null)
+    		return;
     	switch(requestCode)
     	{
     	case REQUEST_ENABLE_BT:
@@ -85,6 +88,8 @@ public class MainActivity extends Activity {
     		String device = data.getStringExtra(BTDevicesView.RESULT);
     		handleBTConnection2(device);
     		break;
+    	default:
+    		return;
     	}
     }
     
@@ -102,7 +107,8 @@ public class MainActivity extends Activity {
     {
     	if(device.compareTo("") == 0)
     	{
-    		//this means we have to find a device by discovery
+    		Intent scan_intent = new Intent(this, BTDevicesScanActivity.class);
+    		startActivityForResult(scan_intent, SCAN_FOR_DEVICE);
     	}
     	else
     	{

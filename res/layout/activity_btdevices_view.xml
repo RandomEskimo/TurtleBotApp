@@ -22,6 +22,6 @@
         android1:layout_height="wrap_content"
         android1:layout_alignParentBottom="true"
         android1:layout_centerHorizontal="true"
-        android1:text="Cancel" />
+        android1:text="@string/btdevices_cancel" />
 
 </RelativeLayout>
