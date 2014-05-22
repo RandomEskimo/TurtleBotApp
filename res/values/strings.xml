@@ -25,5 +25,4 @@
     <string name="btdevices_cancel">Scan for devices</string>
     <string name="title_activity_btdevices_scan">Scanning for devices</string>
     <string name="btdevice_scan_cancel">Cancel</string>
-
 </resources>

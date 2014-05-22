@@ -1,9 +1,6 @@
 package com.example.turtlebotproject;
 
 import java.util.ArrayList;
-
-import android.R;
-import android.app.Activity;
 import android.app.ListActivity;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
@@ -11,8 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -38,7 +33,7 @@ public class BTDevicesScanActivity extends ListActivity {
 		found_devices = (ListView)findViewById(android.R.id.list);
 		
 		
-		cancel_button = (Button)findViewById(R.id.btscan_cancel);
+		cancel_button = (Button)findViewById(R.id.button1);
 		cancel_button.setOnClickListener(cancel_click_listener);
 		
 		IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);

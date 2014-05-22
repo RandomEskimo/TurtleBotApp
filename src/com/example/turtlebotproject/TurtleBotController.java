@@ -27,7 +27,7 @@ public class TurtleBotController {
 		return tbc;
 	}
 	
-	public void move
+	//public void move
 	
 	public void drive(int speed, int radius)
 	{
