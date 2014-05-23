@@ -75,15 +75,6 @@
         android:text="Banjo" />
 
     <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
-        android:text="@string/stopScript" />
-
-    <Button
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -135,5 +126,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
         android:text="* = Requires extra peripherals " />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/stopScript" />
 
 </RelativeLayout>

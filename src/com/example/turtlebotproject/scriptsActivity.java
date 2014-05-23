@@ -306,15 +306,11 @@ public class scriptsActivity extends MainActivity {
 		final Context context = this;
 		
 		// assign buttons to xml button ids
-		stopScript = (Button) findViewById(R.id.button11);
+		stopScript = (Button) findViewById(R.id.button20);
  
 		stopScript.setOnClickListener(new OnClickListener() {
  
 			public void onClick(View arg0) {
-		
-				// not implemented yet
-//				Intent intent = new Intent(context, accActivity.class);
-//				startActivity(intent);   
 		
 			}
 		});

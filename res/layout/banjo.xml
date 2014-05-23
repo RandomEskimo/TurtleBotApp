@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="42dp"
         android:gravity="center"
-        android:text="Robot plays a note of a chord for each of its four cliff sensors. Select the chord using the bumper, as follows:"
+        android:text="The robot plays a note of a chord for each of its four cliff sensors. Select the chord using the bumper, as follows:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
