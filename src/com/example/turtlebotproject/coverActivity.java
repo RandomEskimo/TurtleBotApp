@@ -32,7 +32,7 @@ public class coverActivity extends MainActivity	{
  
 			public void onClick(View arg0) {
  
-			  // no implementation
+			  TurtleBotController.startScript(TurtleBotController.SCRIPT_COVER);
 				
 			}
 		});
@@ -51,7 +51,7 @@ public class coverActivity extends MainActivity	{
  
 			public void onClick(View arg0) {
 				
-				// no implementation
+				TurtleBotController.stop();
 				
 			}
 		});

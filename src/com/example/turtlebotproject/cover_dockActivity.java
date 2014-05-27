@@ -32,7 +32,7 @@ public class cover_dockActivity extends MainActivity	{
  
 			public void onClick(View arg0) {
  
-			  // no implementation
+				TurtleBotController.startScript(TurtleBotController.SCRIPT_COVER_DOCK);
 				
 			}
 		});
@@ -51,7 +51,7 @@ public class cover_dockActivity extends MainActivity	{
  
 			public void onClick(View arg0) {
 				
-				// no implementation
+				TurtleBotController.stop();
 				
 			}
 		});

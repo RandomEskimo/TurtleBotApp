@@ -54,6 +54,7 @@ public class BTDevicesScanActivity extends ListActivity {
 	@Override
 	protected void onDestroy()
 	{
+		super.onDestroy();
 		this.unregisterReceiver(mReceiver);
 	}
 	

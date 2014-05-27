@@ -34,7 +34,7 @@ public class banjoActivity extends MainActivity	{
  
 			public void onClick(View arg0) {
  
-			  // no implementation
+				TurtleBotController.startScript(TurtleBotController.SCRIPT_BANJO);
 				
 			}
 		});
@@ -53,7 +53,7 @@ public class banjoActivity extends MainActivity	{
  
 			public void onClick(View arg0) {
 				
-				// no implementation
+				TurtleBotController.stop();
 				
 			}
 		});

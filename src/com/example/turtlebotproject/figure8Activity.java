@@ -32,7 +32,7 @@ public class figure8Activity extends MainActivity	{
  
 			public void onClick(View arg0) {
  
-			  // no implementation
+			  TurtleBotController.startScript(TurtleBotController.SCRIPT_FIGURE_8);
 				
 			}
 		});
@@ -51,7 +51,7 @@ public class figure8Activity extends MainActivity	{
  
 			public void onClick(View arg0) {
 				
-				// no implementation
+				TurtleBotController.stop();
 				
 			}
 		});
