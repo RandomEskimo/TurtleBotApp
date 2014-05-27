@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
@@ -12,9 +13,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.view.View.OnClickListener;
+
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 public class MainActivity extends Activity {
 	
@@ -74,6 +78,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
+    	String device = "";
     	if(data == null)
     		return;
     	switch(requestCode)
@@ -84,7 +89,11 @@ public class MainActivity extends Activity {
     			handleBTConnection();
     		break;
     	case SELECT_DEVICE:
-    		String device = data.getStringExtra(BTDevicesView.RESULT);
+    		device = data.getStringExtra(BTDevicesView.RESULT);
+    		handleBTConnection2(device);
+    		break;
+    	case SCAN_FOR_DEVICE:
+    		device = data.getStringExtra(BTDevicesScanActivity.RESULT);
     		handleBTConnection2(device);
     		break;
     	default:
@@ -113,11 +122,21 @@ public class MainActivity extends Activity {
     	{
     		//we have a device mac address now we need to make sure it is available
     		BluetoothAdapter bt_adapter = BluetoothAdapter.getDefaultAdapter();
-    		String mac = device.split("\n")[1];
+    		String mac = device.split("\n")[1]; //get the mac address from the string returned
     		BluetoothDevice bt_device = bt_adapter.getRemoteDevice(mac);
+    		if(bt_device == null)
+    			return;
+    		//Method m = bt_device.getClass().getMethod("createRfcommSocket", new Class[] { int.class });
+    		//BluetoothSocket connection = (BluetoothSocket)m.invoke(bt_device, port);
+    		TurtleBotController.connect(bt_device);
+    		if(TurtleBotController.isConnected())
+    		{
+    			//we now have the turtlebot connected so we can hand over to the 
+    			//robot control interface
+    			Intent intent = new Intent(this, MainActivity2.class);
+    	        startActivity(intent); 
+    		}
     	}
-    	//Intent intent = new Intent(this, MainActivity2.class);
-        //startActivity(intent); 
     }
     
     @Override
@@ -128,16 +147,3 @@ public class MainActivity extends Activity {
     }
     
 }
-
-//class BTDeviceAdapter extends ArrayAdapter<BluetoothDevice>
-//{
-//	public BTDeviceAdapter(Context context, int textViewResourceId,
-//	        List<BluetoothDevice> objects) 
-//	{
-//	    super(context, textViewResourceId, objects);
-//	    for (int i = 0; i < objects.size(); ++i) 
-//	    {
-//	    	//mIdMap.put(objects.get(i), i);
-//	    }
-//	}
-//}
