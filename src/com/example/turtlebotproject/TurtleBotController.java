@@ -33,7 +33,9 @@ public class TurtleBotController {
 	private static final byte[] FULL = {(byte)132};
 	private static final byte[] SAFE = {(byte)131};
 	
-	private static final byte DEMO = (byte)136;
+	private static final byte OP_DRIVE = (byte)137;
+	private static final byte OP_DIRECT_DRIVE = (byte)145;
+	private static final byte OP_DEMO = (byte)136;
 	
 	private static final UUID T_BOT_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 	
@@ -68,6 +70,7 @@ public class TurtleBotController {
 	public static void connect(BluetoothDevice device)
 	{
 		tbc = new TurtleBotController(device);
+		tbc.sendCommand(SAFE_START);
 	}
 	
 	public static boolean isConnected()
@@ -108,14 +111,54 @@ public class TurtleBotController {
 		}
 	}
 	
-	//public void move
+	private static byte reverse(byte b)
+	{
+		byte out = 0;
+		for(int i = 0;i < 8;++i)
+		{
+			out |= b & 1;
+			out = (byte)(out << 1);
+			b = (byte)(b >> 1);
+		}
+		return out;
+	}
 	
-	public static void drive(int speed, int radius)
+	private static byte[] getShort(int in)
+	{
+		byte b1 = 0;
+		byte b2 = 0;
+		for(int i = 0;i < 8;++i)
+		{
+			b1 |= in & 1;
+			b1 = (byte)(b1 << 1);
+			in = in >> 1;
+		}
+		for(int i = 0;i < 8;++i)
+		{
+			b2 |= in & 1;
+			b2 = (byte)(b2 << 1);
+			in = in >> 1;
+		}
+		byte [] out = {reverse(b2), reverse(b1)};
+		return out;
+	}
+	
+	public static void drive(int lwheel, int rwheel)
 	{
 		//System.out.println("Moving at: " + speed + ", radius: " + radius);
 		if(exists())
 		{
-			byte[] bytes = {};//...
+			byte[] lwheel_bytes = getShort(lwheel);
+			byte[] rwheel_bytes = getShort(rwheel);
+			
+			byte[] bytes = new byte[5];
+			bytes[0] = OP_DIRECT_DRIVE;
+			bytes[1] = rwheel_bytes[0];
+			bytes[2] = rwheel_bytes[1];
+			bytes[3] = lwheel_bytes[0];
+			bytes[4] = lwheel_bytes[1];
+			tbc.sendCommand(SAFE_START);
+			tbc.sendCommand(bytes);
 		}
 	}
 	
@@ -129,7 +172,7 @@ public class TurtleBotController {
 	{
 		System.out.println("Starting script: " + script);
 		
-		byte[] bytes = {DEMO, (byte)script};
+		byte[] bytes = {OP_DEMO, (byte)script};
 		if(exists())
 		{
 			tbc.sendCommand(SAFE_START);

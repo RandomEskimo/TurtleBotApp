@@ -112,6 +112,16 @@ public class joystickActivity extends MainActivity {
     public void OnMoved(int pan, int tilt) {
     	txtX.setText(Integer.toString(pan));
     	txtY.setText(Integer.toString(tilt));
+    	
+    	int lwheel = pan;
+    	int rwheel = pan;
+    	
+    	if(tilt < 0)
+    		lwheel += tilt;
+    	else
+    		rwheel -= tilt;
+    	
+    	TurtleBotController.drive(lwheel, rwheel);
     }
 
     @Override
