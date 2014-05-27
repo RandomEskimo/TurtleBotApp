@@ -112,9 +112,12 @@ public class MainActivity extends Activity {
     	else
     	{
     		//we have a device mac address now we need to make sure it is available
+    		BluetoothAdapter bt_adapter = BluetoothAdapter.getDefaultAdapter();
+    		String mac = device.split("\n")[1];
+    		BluetoothDevice bt_device = bt_adapter.getRemoteDevice(mac);
     	}
-    	Intent intent = new Intent(this, MainActivity2.class);
-        startActivity(intent); 
+    	//Intent intent = new Intent(this, MainActivity2.class);
+        //startActivity(intent); 
     }
     
     @Override
