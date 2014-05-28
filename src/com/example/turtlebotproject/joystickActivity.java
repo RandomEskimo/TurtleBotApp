@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import com.example.turtlebotproject.JoystickMovedListener;
 import com.example.turtlebotproject.JoystickView;
@@ -17,12 +19,18 @@ public class joystickActivity extends MainActivity {
 	Button scriptButton;
 	Button accButton;
 	
-	// create radio buttons
-	// not implemented yet
+	// create radio group
+	RadioGroup velocityGroup;
+	RadioButton fast;
+	RadioButton medium;
+	RadioButton slow;
 	
 	//joystick variables
 	TextView txtX, txtY;
 	JoystickView joystick;
+	
+	// speed factor for velocity of turtlebot
+	int factor = 100;
 	 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -34,8 +42,10 @@ public class joystickActivity extends MainActivity {
 		addListenerOnButton2();
 		addListenerOnButton3();
 		
-		// create radio button listeners
-		// not implemented yet
+		// setup velocity listener
+		addRadioButtonListener1();
+		addRadioButtonListener2();
+		addRadioButtonListener3();
 		
 		// joystick variables
 		// variables show x and y joystick movement
@@ -46,8 +56,20 @@ public class joystickActivity extends MainActivity {
 		// joystick listener
 		joystick.setOnJostickMovedListener(_listener);
 	}
+	
+	// method to set speed factor
+	public void setFactor(int x)
+	{
+		this.factor=x;
+	}
+	
+	// method to print factor
+	public void printFactor()
+	{
+		System.out.println("" + this.factor + "");
+	}
 
-// BUTTONS FOR LINKING TO SCREENS
+	// BUTTONS FOR LINKING TO SCREENS
 	// button for going to Joystick page
 	public void addListenerOnButton() {
 	   	 
@@ -99,7 +121,7 @@ public class joystickActivity extends MainActivity {
 			public void onClick(View arg0) {
 		
 				Intent intent = new Intent(context, accActivity.class);
-				startActivity(intent);   
+				startActivity(intent);
 		
 			}
 		});
@@ -112,8 +134,6 @@ public class joystickActivity extends MainActivity {
     public void OnMoved(int pan, int tilt) {
     	txtX.setText(Integer.toString(pan));
     	txtY.setText(Integer.toString(tilt));
-    	
-    	int factor = 50;
     	
     	int x = pan * factor;
     	int y = -tilt * factor;
@@ -130,4 +150,65 @@ public class joystickActivity extends MainActivity {
 		TurtleBotController.drive(0, 0);
 	}
     }; 
+    
+
+	private void addRadioButtonListener1() {
+		
+		// get radio button ids
+		fast = (RadioButton) findViewById(R.id.radio0);
+		
+		// setup listeners
+		// fast radio button
+		fast.setOnClickListener(new OnClickListener() {
+ 
+			public void onClick(View arg0) {		
+				
+				// set speed to fast 
+				setFactor(100);
+				printFactor();
+				}
+
+			}
+		);
+		System.out.println("" + factor + "");	
+	}
+	
+	// medium velocity button listener
+	private void addRadioButtonListener2() {
+		
+		// get radio button ids	
+		medium = (RadioButton) findViewById(R.id.radio1);
+		
+		// setup listeners
+		medium.setOnClickListener(new OnClickListener() {
+ 
+			public void onClick(View arg0) {		
+				
+					// set speed to medium 
+					setFactor(50);
+					printFactor();
+				}
+			}
+		);
+		System.out.println("" + factor + "");
+	}
+	
+	// slow velocity button listener
+	private void addRadioButtonListener3() {
+	
+		// get radio button ids
+		slow = (RadioButton) findViewById(R.id.radio2);
+		
+		// fast radio button
+		slow.setOnClickListener(new OnClickListener() {
+	
+			public void onClick(View arg0) {		
+					
+					// set speed to slow 
+					setFactor(20);
+					printFactor();
+				}
+			}
+		);
+		}
 }
