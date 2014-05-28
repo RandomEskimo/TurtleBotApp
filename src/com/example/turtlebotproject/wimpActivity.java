@@ -1,6 +1,5 @@
 package com.example.turtlebotproject;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,9 +20,7 @@ public class wimpActivity extends MainActivity	{
 
 	// button for starting script
 	public void addListenerOnStartButton() {
-	   	 
-		final Context context = this;
- 
+	   	  
 		// assign buttons to xml button ids
 		startButton = (Button) findViewById(R.id.button1);
 
@@ -40,9 +37,7 @@ public class wimpActivity extends MainActivity	{
 	
 	// button for stopping script
 	public void addListenerOnStopButton() {
-	   	 
-		final Context context = this;
- 
+	   	  
 		// assign buttons to xml button ids
 		stopButton = (Button) findViewById(R.id.button2);
  

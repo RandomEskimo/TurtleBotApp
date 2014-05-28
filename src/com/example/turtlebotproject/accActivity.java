@@ -94,8 +94,6 @@ public class accActivity extends MainActivity {
 // BUTTONS FOR ENABLING/DISABLING ACCELEROMETER
 	// acc enable button listener
 	public void addListenerOnEnableButton() {
-	   	 
-		final Context context = this;
  
 		// assign buttons to xml button ids
 		accEnable = (Button) findViewById(R.id.button4);
@@ -105,16 +103,12 @@ public class accActivity extends MainActivity {
  
 			public void onClick(View arg0) {
  
-				// not implemented yet, goes to joystick screen
-//			    Intent intent = new Intent(context, joystickActivity.class);
-//                            startActivity(intent);   
+				// not implemented yet
 			}
 		});
 	}
 	// acc disable button listener
 	public void addListenerOnDisableButton() {
-	   	 
-		final Context context = this;
  
 		// assign buttons to xml button ids
 		accDisable = (Button) findViewById(R.id.button5);
@@ -124,9 +118,7 @@ public class accActivity extends MainActivity {
  
 			public void onClick(View arg0) {
 				
-				// not implemented yet, goes to joystick screen
-//			    Intent intent = new Intent(context, joystickActivity.class);
-//                            startActivity(intent);   
+				// not implemented yet
 			}
 		});
 	}

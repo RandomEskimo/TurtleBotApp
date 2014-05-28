@@ -300,10 +300,8 @@ public class scriptsActivity extends MainActivity {
 			}
 		});
 	}
-	// stop script (button 11)
+	// stop script (button 20)
 	public void addListenerOnStopScript() {
-	   	 
-		final Context context = this;
 		
 		// assign buttons to xml button ids
 		stopScript = (Button) findViewById(R.id.button20);
@@ -311,6 +309,8 @@ public class scriptsActivity extends MainActivity {
 		stopScript.setOnClickListener(new OnClickListener() {
  
 			public void onClick(View arg0) {
+				
+				TurtleBotController.stop();
 		
 			}
 		});
