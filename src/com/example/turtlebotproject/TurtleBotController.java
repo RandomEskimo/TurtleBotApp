@@ -99,9 +99,9 @@ public class TurtleBotController {
 			try {
 				out = tbc.socket.getOutputStream();
 				out.write(com);
-				System.out.println("Sent");
+				//System.out.println("Sent");
 			} catch (IOException e) {
-				System.out.println("Unable to send command");
+				//System.out.println("Unable to send command");
 			}
 			
 		}
@@ -197,5 +197,10 @@ public class TurtleBotController {
 				tbc.socket.close();
 			} catch (IOException e) {}
 		}
+	}
+	
+	public static void driveXY(int x, int y)
+	{
+		
 	}
 }

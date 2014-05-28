@@ -113,21 +113,21 @@ public class joystickActivity extends MainActivity {
     	txtX.setText(Integer.toString(pan));
     	txtY.setText(Integer.toString(tilt));
     	
-    	int lwheel = pan;
-    	int rwheel = pan;
+    	int factor = 50;
     	
-    	if(tilt < 0)
-    		lwheel += tilt;
-    	else
-    		rwheel -= tilt;
+    	int x = pan * factor;
+    	int y = -tilt * factor;
     	
-    	TurtleBotController.drive(lwheel, rwheel);
+    	
+    	//System.out.println("" + x + ", " + y);
+    	TurtleBotController.driveXY(x, y);
     }
 
     @Override
     public void OnReleased() {
 		txtX.setText("Stopped");
 		txtY.setText("Stopped");
+		TurtleBotController.drive(0, 0);
 	}
     }; 
 }
