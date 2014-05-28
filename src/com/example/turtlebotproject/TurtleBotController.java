@@ -201,6 +201,45 @@ public class TurtleBotController {
 	
 	public static void driveXY(int x, int y)
 	{
+		// First hypotenuse
+	    //var z = Math.sqrt(x*x + y*y);
+		double z = Math.sqrt(x*x + y*y);
 		
+		// angle in radians
+	    //rad = Math.acos(Math.abs(x)/z);
+		double rad = Math.acos(Math.abs(x)/z);
+		// and in degrees
+	    double angle = rad*180/Math.PI;
+	    
+	    // Now angle indicates the measure of turn
+	    // Along a straight line, with an angle o, the turn co-efficient is same
+	    // this applies for angles between 0-90, with angle 0 the co-eff is -1
+	    // with angle 45, the co-efficient is 0 and with angle 90, it is 1
+	    double tcoeff = -1 + (angle/90)*2;
+	    double turn = tcoeff * Math.abs(Math.abs(y) - Math.abs(x));
+	    turn = Math.round(turn*100)/100;
+	    
+	    // And max of y or x is the movement
+	    double move = Math.max(Math.abs(y),Math.abs(x));
+	    
+	    double left=0, right=0;
+	    
+	    // First and third quadrant
+	    if( (x >= 0 && y >= 0) || (x < 0 &&  y < 0) ) {
+	        left = move;
+	        right = turn;
+	    } else {
+	        right = move;
+	        left = turn;
+	    }
+	    
+	 // Reverse polarity
+	    if(y < 0) {
+	        left = 0 - left;
+	        right = 0 - right;
+	    }
+	    int lwheel = (int)left;
+	    int rwheel = (int)right;
+	    drive(lwheel, rwheel);
 	}
 }
