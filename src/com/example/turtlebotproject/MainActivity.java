@@ -53,8 +53,6 @@ public class MainActivity extends Activity {
 				if(bt_adapter == null)
 				{
 					//add an error message here because this means the device does not support bluetooth
-					Intent intent = new Intent(context, MainActivity2.class);
-			        startActivity(intent);
 					return;
 				}
 				//make sure bt is enabled
@@ -133,7 +131,7 @@ public class MainActivity extends Activity {
     		{
     			//we now have the turtlebot connected so we can hand over to the 
     			//robot control interface
-    			Intent intent = new Intent(this, MainActivity2.class);
+    			Intent intent = new Intent(this, joystickActivity.class);
     	        startActivity(intent); 
     		}
     	}

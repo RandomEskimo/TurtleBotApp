@@ -40,18 +40,18 @@ public final class R {
         public static final int button9=0x7f08001d;
         public static final int cancel_button=0x7f080006;
         public static final int container=0x7f080007;
-        public static final int joystickView=0x7f080015;
+        public static final int joystickView=0x7f080012;
         public static final int menu_settings=0x7f08001f;
-        public static final int radio0=0x7f08000d;
-        public static final int radio1=0x7f08000e;
-        public static final int radio2=0x7f08000f;
-        public static final int radioGroup1=0x7f08000c;
+        public static final int radio0=0x7f080013;
+        public static final int radio1=0x7f080014;
+        public static final int radio2=0x7f080015;
+        public static final int radioGroup1=0x7f080010;
         public static final int textView1=0x7f080008;
-        public static final int textView2=0x7f080010;
-        public static final int textView3=0x7f080014;
-        public static final int textView4=0x7f080012;
-        public static final int textView5=0x7f080013;
-        public static final int textView6=0x7f080011;
+        public static final int textView2=0x7f08000c;
+        public static final int textView3=0x7f080011;
+        public static final int textView4=0x7f08000e;
+        public static final int textView5=0x7f08000f;
+        public static final int textView6=0x7f08000d;
     }
     public static final class layout {
         public static final int acc=0x7f030000;
@@ -59,19 +59,18 @@ public final class R {
         public static final int activity_btdevices_view=0x7f030002;
         public static final int activity_device_scan=0x7f030003;
         public static final int activity_main=0x7f030004;
-        public static final int activity_main2=0x7f030005;
-        public static final int banjo=0x7f030006;
-        public static final int cover=0x7f030007;
-        public static final int cover_dock=0x7f030008;
-        public static final int figure8=0x7f030009;
-        public static final int home=0x7f03000a;
-        public static final int joystick=0x7f03000b;
-        public static final int mouse=0x7f03000c;
-        public static final int pachelbel=0x7f03000d;
-        public static final int scripts=0x7f03000e;
-        public static final int spot_cover=0x7f03000f;
-        public static final int tag=0x7f030010;
-        public static final int wimp=0x7f030011;
+        public static final int banjo=0x7f030005;
+        public static final int cover=0x7f030006;
+        public static final int cover_dock=0x7f030007;
+        public static final int figure8=0x7f030008;
+        public static final int home=0x7f030009;
+        public static final int joystick=0x7f03000a;
+        public static final int mouse=0x7f03000b;
+        public static final int pachelbel=0x7f03000c;
+        public static final int scripts=0x7f03000d;
+        public static final int spot_cover=0x7f03000e;
+        public static final int tag=0x7f03000f;
+        public static final int wimp=0x7f030010;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;
