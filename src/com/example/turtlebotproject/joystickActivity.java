@@ -185,7 +185,7 @@ public class joystickActivity extends MainActivity {
 			public void onClick(View arg0) {		
 				
 					// set speed to medium 
-					setFactor(50);
+					setFactor(23);
 					printFactor();
 				}
 			}
@@ -205,7 +205,7 @@ public class joystickActivity extends MainActivity {
 			public void onClick(View arg0) {		
 					
 					// set speed to slow 
-					setFactor(20);
+					setFactor(4);
 					printFactor();
 				}
 			}
